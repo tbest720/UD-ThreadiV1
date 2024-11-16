@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" styleClass="vbox" stylesheets="@styleaddproduct.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" styleClass="vbox" stylesheets="@styleaddproduct.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label alignment="CENTER" prefHeight="50.0" prefWidth="600.0" text="Add New Product..." textFill="#404040">
+      <Label alignment="CENTER" prefHeight="39.0" prefWidth="600.0" style="-fx-background-color: #ccd8e8;" text="Add New Product..." textFill="#404040">
         </Label>
       <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="600.0">
          <children>
@@ -124,10 +122,10 @@
       </HBox>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b3b4b5" height="3.0" layoutX="35.0" layoutY="162.0" stroke="TRANSPARENT" strokeLineJoin="BEVEL" strokeType="INSIDE" width="550.0">
          <VBox.margin>
-            <Insets left="25.0" />
+            <Insets bottom="20.0" left="25.0" />
          </VBox.margin>
       </Rectangle>
-      <HBox alignment="CENTER" prefHeight="105.0" prefWidth="600.0">
+      <HBox alignment="CENTER" prefHeight="105.0" prefWidth="600.0" style="-fx-background-color: #ccd8e8;">
          <children>
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="123.0" styleClass="button-green" text="Add Product" textFill="WHITE">
                </Button>
@@ -137,6 +135,9 @@
                </HBox.margin>
             </Button>
          </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
       </HBox>
    </children>
 </VBox>

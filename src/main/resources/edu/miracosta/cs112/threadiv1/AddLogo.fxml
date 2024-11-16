@@ -4,9 +4,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@styleaddlogo.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@styleaddlogo.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label alignment="TOP_LEFT" text="Add a Logo" />
+      <HBox alignment="CENTER" prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: #ccd8e8;">
+         <children>
+            <Label alignment="TOP_LEFT" text="Add a Logo" />
+         </children>
+      </HBox>
       <HBox alignment="CENTER" prefHeight="51.0" prefWidth="600.0">
          <children>
             <Label text="Logo ID" />
@@ -27,7 +31,7 @@
                   <Insets left="5.0" />
                </HBox.margin></Button>
          </children></HBox>
-      <ScrollPane hbarPolicy="NEVER" prefHeight="296.0" prefWidth="600.0">
+      <ScrollPane hbarPolicy="NEVER" prefHeight="296.0" prefWidth="600.0" style="-fx-background-color: #ccd8e8;">
          <content>
             <VBox prefHeight="360.0" prefWidth="585.0">
                <children>
