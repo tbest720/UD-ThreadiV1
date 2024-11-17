@@ -16,6 +16,7 @@ public class HomeController {
     private Stage addProductStage;
     private Stage addLogoStage;
     private Stage editProductStage;
+    private Stage colorCardStage;
 
     @FXML
     public void openAddProductWindow() {
@@ -53,7 +54,7 @@ public class HomeController {
                 Stage addLogoStage = new Stage();
                 addLogoStage.setTitle("Add Logo");
                 addLogoStage.setScene(new Scene(root, 600, 350));
-                addLogoStage.setResizable(false);// Set your preferred dimensions
+                addLogoStage.setResizable(false);
                 addLogoStage.show();
             } catch (IOException e) {
             e.printStackTrace();
@@ -72,13 +73,30 @@ public class HomeController {
 
                 // Create a new stage (window)
                 Stage editProductStage = new Stage();
-                editProductStage.setTitle("Add Logo");
+                editProductStage.setTitle("Edit Product");
                 editProductStage.setScene(new Scene(root, 600, 350));
-                editProductStage.setResizable(false);// Set your preferred dimensions
+                editProductStage.setResizable(false);
                 editProductStage.show();
             } catch (IOException e) {
                 e.printStackTrace();
             }
 
+    }
+
+    public void openColorCardWindow() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("CreateColorCard.fxml"));
+            Parent root = loader.load();
+
+            // Create a new stage (window)
+            Stage colorCardStage = new Stage();
+            colorCardStage.setTitle("Color Card");
+            colorCardStage.setScene(new Scene(root, 300, 300));
+            colorCardStage.setResizable(false);
+            colorCardStage.show();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
