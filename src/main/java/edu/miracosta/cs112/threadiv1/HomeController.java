@@ -11,50 +11,74 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class HomeController {
-    @FXML
-    private Label welcomeText;
-    
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
+
+
+    private Stage addProductStage;
+    private Stage addLogoStage;
+    private Stage editProductStage;
 
     @FXML
     public void openAddProductWindow() {
-        try {
-            // Load the CreateProduct.fxml file
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("AddProduct.fxml"));
-            Parent root = loader.load();
+            try {
+
+                // Load the CreateProduct.fxml file
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("AddProduct.fxml"));
+                Parent root = loader.load();
 
 
-            // Create a new stage (window)
-            Stage stage = new Stage();
-            stage.setTitle("Add Product");
-            stage.setScene(new Scene(root, 600, 350));
-            stage.setResizable(false);// Set your preferred dimensions
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace(); // Print error details if the FXML fails to load
-        }
+                // Create a new window
+                Stage addProductStage  = new Stage();
+                addProductStage.setTitle("Add Product");
+                addProductStage.setScene(new Scene(root, 600, 350));
+                addProductStage.setResizable(false);// Set your preferred dimensions
+                addProductStage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
     }
 
+
+
+    @FXML
     public void openAddLogoWindow() {
-        try {
-            // Load the CreateProduct.fxml file
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("AddLogo.fxml"));
-            Parent root = loader.load();
+            try {
+
+                // Load the AddLogo.fxml file
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("AddLogo.fxml"));
+                Parent root = loader.load();
 
 
-            // Create a new stage (window)
-            Stage stage = new Stage();
-            stage.setTitle("Add Logo");
-            stage.setScene(new Scene(root, 600, 350));
-            stage.setResizable(false);// Set your preferred dimensions
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace(); // Print error details if the FXML fails to load
-        }
+                // Create a new window
+                Stage addLogoStage = new Stage();
+                addLogoStage.setTitle("Add Logo");
+                addLogoStage.setScene(new Scene(root, 600, 350));
+                addLogoStage.setResizable(false);// Set your preferred dimensions
+                addLogoStage.show();
+            } catch (IOException e) {
+            e.printStackTrace();
+            }
+    }
 
+
+    @FXML
+    public void openEditProductWindow() {
+
+        // Load the EditProduct.fxml file
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("EditProduct.fxml"));
+                Parent root = loader.load();
+
+
+                // Create a new stage (window)
+                Stage editProductStage = new Stage();
+                editProductStage.setTitle("Add Logo");
+                editProductStage.setScene(new Scene(root, 600, 350));
+                editProductStage.setResizable(false);// Set your preferred dimensions
+                editProductStage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
     }
 }

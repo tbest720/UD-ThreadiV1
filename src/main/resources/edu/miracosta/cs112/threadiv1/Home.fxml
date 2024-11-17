@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" spacing="20.0" styleClass="vbox" stylesheets="@stylehome.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.miracosta.cs112.threadiv1.HomeController">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" spacing="20.0" styleClass="vbox" stylesheets="@stylehome.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.miracosta.cs112.threadiv1.HomeController">
    <children>
       <ImageView fitHeight="150.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -36,14 +36,14 @@
       </HBox>
       <HBox alignment="CENTER" layoutX="10.0" layoutY="38.0" prefHeight="169.0" prefWidth="600.0" spacing="20.0">
          <children>
-            <Button layoutX="240.0" layoutY="10.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="200.0" text="Create Color Card" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button fx:id="createCC" layoutY="10.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="200.0" text="Create Color Card" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Century Gothic" size="24.0" />
                </font>
             </Button>
-            <Button layoutX="200.0" layoutY="10.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="200.0" text="Edit Existing Products" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button fx:id="editProd" layoutX="200.0" layoutY="10.0" mnemonicParsing="false" onAction="#openEditProductWindow" prefHeight="150.0" prefWidth="200.0" text="Edit Existing Products" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font name="Segoe UI" size="24.0" />
+                  <Font name="Century Gothic" size="24.0" />
                </font>
             </Button>
          </children>

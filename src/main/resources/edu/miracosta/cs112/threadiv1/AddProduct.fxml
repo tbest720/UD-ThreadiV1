@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" styleClass="vbox" stylesheets="@styleaddproduct.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" styleClass="vbox" stylesheets="@styleaddproduct.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.miracosta.cs112.threadiv1.AddProductController">
    <children>
       <Label alignment="CENTER" prefHeight="39.0" prefWidth="600.0" style="-fx-background-color: #ccd8e8;" text="Add New Product..." textFill="#404040">
         </Label>
@@ -127,9 +127,9 @@
       </Rectangle>
       <HBox alignment="CENTER" prefHeight="105.0" prefWidth="600.0" style="-fx-background-color: #ccd8e8;">
          <children>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="123.0" styleClass="button-green" text="Add Product" textFill="WHITE">
+            <Button onAction="#addProduct" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="123.0" styleClass="button-green" text="Add Product" textFill="WHITE">
                </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="249.0" layoutY="43.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="123.0" styleClass="button-red" text="Cancel" textFill="WHITE">
+            <Button onAction="#exitWindow" contentDisplay="CENTER" layoutX="249.0" layoutY="43.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="123.0" styleClass="button-red" text="Cancel" textFill="WHITE">
                <HBox.margin>
                   <Insets left="40.0" />
                </HBox.margin>

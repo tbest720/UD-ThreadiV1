@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@styleaddlogo.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@styleaddlogo.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.miracosta.cs112.threadiv1.AddLogoController">
    <children>
       <HBox alignment="CENTER" prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: #ccd8e8;">
          <children>
@@ -26,7 +26,7 @@
                <HBox.margin>
                   <Insets left="5.0" />
                </HBox.margin></TextField>
-            <Button mnemonicParsing="false" styleClass="button-green" text="Generate">
+            <Button onAction="#generateStops" styleClass="button-green" text="Generate">
                <HBox.margin>
                   <Insets left="5.0" />
                </HBox.margin></Button>
